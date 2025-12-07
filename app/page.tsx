@@ -18,7 +18,7 @@ export default function Home() {
     setReview(json?.review);
   }
   return (
-    <div className="min-h-screen flex">
+    <div className="min-h-screen flex overflow-hidden">
       <Editor generateReviewHandler={generateReviewHandler} />
       <Markdown review={review} />
     </div>
